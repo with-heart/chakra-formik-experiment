@@ -1,0 +1,8 @@
+{
+  "name": "chakra-formik-experiment",
+  "version": "0.0.0",
+  "description": "An experiment for tight-knit Chakra+Formik integration with a familiar API",
+  "main": "index.js",
+  "author": "Mark Chandler",
+  "license": "MIT"
+}
