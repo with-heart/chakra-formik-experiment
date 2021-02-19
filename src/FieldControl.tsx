@@ -2,10 +2,8 @@ import * as React from "react"
 import { createContext } from "@chakra-ui/utils"
 import { FormControl, FormControlProps } from "@chakra-ui/react"
 
-export type FieldControlProps = Omit<FormControlProps, "name"> & {
-  /** The name of the `Field`. Used to connect the form element to Formik. */
-  name: string
-}
+export type FieldControlProps = Omit<FormControlProps, "name"> &
+  FieldControlContext
 
 export type FieldControlContext = {
   /** The name of the `Field`. Used to connect the form element to Formik. */
