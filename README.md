@@ -121,6 +121,18 @@ const Example = () => (
 )
 ```
 
+**Note**: If a prop exists on both the `FieldControl` and the form element
+component, the prop of the component will be used.
+
+```tsx
+// in this example, the input is connected to Formik as `"component"`
+const Example = () => (
+  <FormControl name="control">
+    <InputFormik name="component">
+  </FormControl>
+)
+```
+
 ## Integration Checklist
 
 - [x] `Checkbox` (`CheckboxFormik`)

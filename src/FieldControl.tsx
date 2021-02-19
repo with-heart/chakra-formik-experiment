@@ -1,6 +1,7 @@
 import * as React from "react"
 import { createContext } from "@chakra-ui/utils"
 import { FormControl, FormControlProps } from "@chakra-ui/react"
+import { useField } from "formik"
 
 export type FieldControlProps = Omit<FormControlProps, "name"> &
   FieldControlContext
@@ -38,8 +39,13 @@ export { useFieldControlContext }
 export const FieldControl = ({
   name,
   ...formControlProps
-}: FieldControlProps) => (
-  <FieldControlProvider value={{ name }}>
-    <FormControl {...formControlProps} />
-  </FieldControlProvider>
-)
+}: FieldControlProps) => {
+  const [, meta] = useField(name)
+  const isInvalid = formControlProps.isInvalid ?? !!(meta.touched && meta.error)
+
+  return (
+    <FieldControlProvider value={{ name }}>
+      <FormControl {...formControlProps} isInvalid={isInvalid} />
+    </FieldControlProvider>
+  )
+}
