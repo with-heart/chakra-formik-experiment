@@ -65,6 +65,23 @@ const CheckboxFormikExample = () => (
 )
 ```
 
+### `InputFormik`
+
+The `InputFormik` component is Chakra's `Input` component except it's
+automatically connected to Formik via the `name` prop.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { InputFormik } from "chakra-formik-experiment"
+
+const InputFormikExample = () => (
+  <Formik initialValues={{ name: "name" }} onSubmit={console.log}>
+    <InputFormik name="name" />
+  </Formik>
+)
+```
+
 ### `FieldControl`
 
 The `FieldControl` component has the same API and behavior as `FormControl`,
@@ -111,7 +128,7 @@ const Example = () => (
 - [ ] `Editable`
 - [x] `FormControl` (`FieldControl`)
 - [ ] `FormErrorMessage`
-- [ ] `Input`
+- [x] `Input` (`InputFormik`)
 - [ ] `NumberInput`
 - [ ] `Radio`
 - [ ] `RadioGroup`
