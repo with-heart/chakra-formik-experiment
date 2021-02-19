@@ -121,15 +121,33 @@ const Example = () => (
 )
 ```
 
-**Note**: If a prop exists on both the `FieldControl` and the form element
-component, the prop of the component will be used.
+### `FieldErrorMessage`
+
+The `FieldErrorMessage` component works similarly to the Chakra
+`FormErrorMessage` component, except it is automatically connected to the
+`touched` and `error` state of the field, meaning that if the field has been
+touched and has a validation error, that error message will be displayed.
 
 ```tsx
-// in this example, the input is connected to Formik as `"component"`
+const FieldErrorMessageExample = () => (
+  <FieldControl name="name">
+    <InputFormik />
+    <FieldErrorMessage />
+  </FieldControl>
+)
+```
+
+**Note**: This behavior will not occur if an `isInvalid` prop is passed to
+`FieldControl`.
+
+```tsx
+// in this example, the error message is never displayed because
+// `isInvalid={false}` is passed to `FieldControl`
 const Example = () => (
-  <FormControl name="control">
-    <InputFormik name="component">
-  </FormControl>
+  <FieldControl name="name" isInvalid={false}>
+    <InputFormik />
+    <FieldErrorMessage />
+  </FieldControl>
 )
 ```
 
@@ -139,7 +157,7 @@ const Example = () => (
 - [ ] `CheckboxGroup`
 - [ ] `Editable`
 - [x] `FormControl` (`FieldControl`)
-- [ ] `FormErrorMessage`
+- [x] `FormErrorMessage` (`FieldErrorMessage`)
 - [x] `Input` (`InputFormik`)
 - [ ] `NumberInput`
 - [ ] `Radio`
