@@ -1,21 +1,14 @@
 import * as React from "react"
 import { Checkbox, CheckboxProps } from "@chakra-ui/react"
 import { useField } from "formik"
-import { useFieldControlContext } from "./FieldControl"
 import { ChakraFieldProps } from "./types"
+import { useChakraFieldProps } from "./useChakraFieldProps"
 
 export type CheckboxFormikProps = ChakraFieldProps<CheckboxProps>
 
 /** `CheckboxFormik` connects Chakra's `Checkbox` component as a Formik field. */
 export const CheckboxFormik = (props: CheckboxFormikProps) => {
-  const controlContext = useFieldControlContext()
-
-  // if the `name` prop was passed directly to `CheckboxFormik`, we'll use that
-  // as the name of the `Field`. Otherwise, we'll use the `name` value from the
-  // surrounding `FieldControl` (if it exists).
-  const name = props.name ?? controlContext?.name
-
-  // we'll use the return value of `useField` to connect `Checkbox` to Formik
+  const { name } = useChakraFieldProps(props)
   const [{ checked, ...field }] = useField({ name, type: "checkbox" })
 
   return <Checkbox isChecked={checked} {...field} {...props} />
