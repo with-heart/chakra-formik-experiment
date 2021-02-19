@@ -25,23 +25,23 @@ const Example = () => (
 )
 ```
 
-### With `FormControl`
+### With `FieldControl`
 
-Field components exported by this library automatically derive props from a
-wrapping `FormControl`. The `name` prop value will be passed to `Formik` by
-`Field` components.
+`FieldControl` provides the same behavior as Chakra's `FormControl`, but
+automatically connects wrapped form elements and `FieldErrorMessage` components
+with Formik via the `name` prop.
 
 ```tsx
 import * as React from "react"
 import { Formik } from "formik"
-import { FormControl, FormLabel } from "@chakra-ui/react"
-import { InputField, FieldErrorMessage } from "chakra-formik-experiment"
+import { FormLabel } from "@chakra-ui/react"
+import { FieldControl, FieldErrorMessage, InputFormik } from "chakra-formik-experiment"
 
 const Example = () => (
-  <FormControl id="name" name="name">
+  <FieldErrorMessage id="name" name="name">
     <FormLabel>Name</FormLabel>
     <InputFormik />
-    <FormErrorMessageFormik />
+    <FieldErrorMessage />
   </FormControl>
 )
 ```
@@ -92,7 +92,7 @@ const Example = () => (
 - [ ] `Checkbox`
 - [ ] `CheckboxGroup`
 - [ ] `Editable`
-- [ ] `FormControl`
+- [x] `FormControl` (`FieldControl`)
 - [ ] `FormErrorMessage`
 - [ ] `Input`
 - [ ] `NumberInput`

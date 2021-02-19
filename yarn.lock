@@ -1415,7 +1415,7 @@
     "@chakra-ui/hooks" "1.1.4"
     "@chakra-ui/utils" "1.2.0"
 
-"@chakra-ui/utils@1.2.0":
+"@chakra-ui/utils@1.2.0", "@chakra-ui/utils@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-1.2.0.tgz#9385950e91455ecf480eb52bca268d3a5f8c9d6d"
   integrity sha512-oMTX8BX1+MUf+iYUafFm9tNfwa3m1cqzMcE/5iQFmNcqKlZmuADnVL28Yw7jhoeouIjANaGY+f51qj9zHgDn9Q==
