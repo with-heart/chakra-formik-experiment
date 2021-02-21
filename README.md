@@ -104,6 +104,26 @@ const RadioFormikExample = () => (
 )
 ```
 
+### `SelectFormik`
+
+The `SelectFormik` component is Chakra's `Select` component except it's
+automatically connected to Formik via the `name` prop.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { SelectFormik } from "chakra-formik-experiment"
+
+const SelectFormikExample = () => (
+  <Formik initialValues={{ item: "A" }} onSubmit={console.log}>
+    <SelectFormik name="item">
+      <option value="A">A</option>
+      <option value="B">B</option>
+    </SelectFormik>
+  </Formik>
+)
+```
+
 ### `FieldControl`
 
 The `FieldControl` component has the same API and behavior as `FormControl`,
