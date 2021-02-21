@@ -82,6 +82,28 @@ const InputFormikExample = () => (
 )
 ```
 
+### `RadioFormik`
+
+The `RadioFormik` component is Chakra's `Radio` component except it's
+automatically connected to Formik via the `name` prop.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { RadioFormik } from "chakra-formik-experiment"
+
+const RadioFormikExample = () => (
+  <Formik initialValues={{ radio: "A" }} onSubmit={console.log}>
+    <RadioFormik name="radio" value="A">
+      A
+    </RadioFormik>
+    <RadioFormik name="radio" value="B">
+      B
+    </RadioFormik>
+  </Formik>
+)
+```
+
 ### `FieldControl`
 
 The `FieldControl` component has the same API and behavior as `FormControl`,
@@ -160,9 +182,9 @@ const Example = () => (
 - [x] `FormErrorMessage` (`FieldErrorMessage`)
 - [x] `Input` (`InputFormik`)
 - [ ] `NumberInput`
-- [ ] `Radio`
+- [x] `Radio` (`RadioFormik`)
 - [ ] `RadioGroup`
-- [ ] `Select`
+- [x] `Select` (`SelectFormik`)
 - [ ] `Slider`
 - [ ] `Switch`
 - [ ] `Textarea`
