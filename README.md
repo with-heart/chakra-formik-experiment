@@ -235,6 +235,23 @@ const SwitchFormikExample = () => (
 )
 ```
 
+### `TextareaFormik`
+
+The `TextareaFormik` component is Chakra's `Textarea` component except it's
+automatically connected to Formik via the `name` prop.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { TextareaFormik } from "chakra-formik-experiment"
+
+const TextareaFormikExample = () => (
+  <Formik initialValues={{ name: "name" }} onSubmit={console.log}>
+    <TextareaFormik name="name" />
+  </Formik>
+)
+```
+
 ## Integration Checklist
 
 - [x] `Checkbox` (`CheckboxFormik`)
@@ -249,4 +266,4 @@ const SwitchFormikExample = () => (
 - [x] `Select` (`SelectFormik`)
 - [ ] `Slider`
 - [x] `Switch` (`SwitchFormik`)
-- [ ] `Textarea`
+- [x] `Textarea` (`TextAreaFormik`)
