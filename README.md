@@ -124,6 +124,27 @@ const SelectFormikExample = () => (
 )
 ```
 
+### `EditableFormik`
+
+The `EditableFormik` component is Chakra's `Editable` component except it's
+automatically connected to Formik via the `name` prop.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { EditableFormik } from "chakra-formik-experiment"
+import { EditablePreview, EditableInput } from "@chakra-ui/react"
+
+const EditableFormikExample = () => (
+  <Formik initialValues={{ name: "Kenichi" }} onSubmit={console.log}>
+    <EditableFormik name="name">
+      <EditablePreview />
+      <EditableInput />
+    </EditableFormik>
+  </Formik>
+)
+```
+
 ### `FieldControl`
 
 The `FieldControl` component has the same API and behavior as `FormControl`,
@@ -256,7 +277,7 @@ const TextareaFormikExample = () => (
 
 - [x] `Checkbox` (`CheckboxFormik`)
 - [ ] `CheckboxGroup`
-- [ ] `Editable`
+- [x] `Editable` (`EditableFormik`)
 - [x] `FormControl` (`FieldControl`)
 - [x] `FormErrorMessage` (`FieldErrorMessage`)
 - [x] `Input` (`InputFormik`)

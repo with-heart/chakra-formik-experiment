@@ -1,6 +1,7 @@
 export * from "./FieldControl"
 export * from "./FieldErrorMessage"
 export * from "./Checkbox"
+export * from "./Editable"
 export * from "./Input"
 export * from "./NumberInput"
 export * from "./Radio"
