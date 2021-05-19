@@ -193,6 +193,30 @@ const Example = () => (
 )
 ```
 
+### `NumberInputFormik`
+
+The `NumberInputFormik` component is Chakra's `NumberInput` component except
+it's automatically connected to Formik via the `name` prop. The value is
+formatted as a number when the form is submitted.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { NumberInputFormik } from "chakra-formik-experiment"
+
+const NumberInputFormikExample = () => (
+  <Formik initialValues={{ number: 123 }} onSubmit={console.log}>
+    <NumberInputFormik name="number">
+      <NumberInputField />
+      <NumberInputStepper>
+        <NumberIncrementStepper />
+        <NumberDecrementStepper />
+      </NumberInputStepper>
+    </NumberInputForm>
+  </Formik>
+)
+```
+
 ## Integration Checklist
 
 - [x] `Checkbox` (`CheckboxFormik`)
@@ -201,7 +225,7 @@ const Example = () => (
 - [x] `FormControl` (`FieldControl`)
 - [x] `FormErrorMessage` (`FieldErrorMessage`)
 - [x] `Input` (`InputFormik`)
-- [ ] `NumberInput`
+- [x] `NumberInput` (`NumberInputFormik`)
 - [x] `Radio` (`RadioFormik`)
 - [ ] `RadioGroup`
 - [x] `Select` (`SelectFormik`)
