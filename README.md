@@ -217,6 +217,24 @@ const NumberInputFormikExample = () => (
 )
 ```
 
+### `SwitchFormik`
+
+The `SwitchFormik` component is Chakra's `Switch` component except it's
+automatically connected to Formik via the `name` prop. The value is formatted as
+a number when the form is submitted.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { SwitchFormik } from "chakra-formik-experiment"
+
+const SwitchFormikExample = () => (
+  <Formik initialValues={{ switch: true }} onSubmit={console.log}>
+    <SwitchFormik />
+  </Formik>
+)
+```
+
 ## Integration Checklist
 
 - [x] `Checkbox` (`CheckboxFormik`)
@@ -230,5 +248,5 @@ const NumberInputFormikExample = () => (
 - [ ] `RadioGroup`
 - [x] `Select` (`SelectFormik`)
 - [ ] `Slider`
-- [ ] `Switch`
+- [x] `Switch` (`SwitchFormik`)
 - [ ] `Textarea`
