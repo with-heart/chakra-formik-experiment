@@ -11,6 +11,9 @@
   "main": "index.js",
   "author": "Mark Chandler",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "npm run build:clean && npm run build:types && npm run build:js",
     "build:clean": "rimraf dist",
