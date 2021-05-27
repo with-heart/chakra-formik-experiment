@@ -65,6 +65,30 @@ const CheckboxFormikExample = () => (
 )
 ```
 
+### `CheckboxGroupFormik`
+
+The `CheckboxGroupFormik` component is Chakra's `CheckboxGroup` component except
+it's automatically connected to Formik via the `name` prop.
+
+**Note**: Use the regular Chakra `Checkbox` component within
+`CheckboxGroupFormik`. We could eventually make `CheckboxFormik` work with it.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { Checkbox } from "@chakra-ui/react"
+import { CheckboxGroupFormik } from "chakra-formik-experiment"
+
+const CheckboxGroupFormikExample = () => (
+  <Formik initialValues={{ radio: "A" }} onSubmit={console.log}>
+    <CheckboxGroupFormik name="radio">
+      <Checkbox value="A">A</Checkbox>
+      <Checkbox value="B">B</Checkbox>
+    </CheckboxGroupFormik>
+  </Formik>
+)
+```
+
 ### `InputFormik`
 
 The `InputFormik` component is Chakra's `Input` component except it's
@@ -300,7 +324,7 @@ const TextareaFormikExample = () => (
 ## Integration Checklist
 
 - [x] `Checkbox` (`CheckboxFormik`)
-- [ ] `CheckboxGroup`
+- [x] `CheckboxGroup` (`CheckboxGroupFormik`)
 - [x] `Editable` (`EditableFormik`)
 - [x] `FormControl` (`FieldControl`)
 - [x] `FormErrorMessage` (`FieldErrorMessage`)
