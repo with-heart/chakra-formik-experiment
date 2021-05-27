@@ -14,5 +14,5 @@ export const RadioGroupFormik = (props: RadioGroupFormikProps) => {
     value: props.value,
   })
 
-  return <RadioGroup {...field} {...props} onChange={setValue} />
+  return <RadioGroup {...props} {...field} onChange={setValue} />
 }

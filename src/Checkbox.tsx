@@ -11,5 +11,5 @@ export const CheckboxFormik = (props: CheckboxFormikProps) => {
   const { name } = useChakraFieldProps(props)
   const [{ checked, ...field }] = useField({ name, type: "checkbox" })
 
-  return <Checkbox isChecked={checked} {...field} {...props} />
+  return <Checkbox isChecked={checked} {...props} {...field} />
 }

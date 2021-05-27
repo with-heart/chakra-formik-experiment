@@ -24,5 +24,5 @@ export const EditableFormik = (props: EditableFormikProps) => {
     field.onBlur(name)
   }, [field, name])
 
-  return <Editable {...field} {...props} onBlur={onBlur} onChange={onChange} />
+  return <Editable {...props} {...field} onBlur={onBlur} onChange={onChange} />
 }

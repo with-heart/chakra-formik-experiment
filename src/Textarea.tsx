@@ -13,5 +13,5 @@ export const TextareaFormik = (props: TextareaFormikProps) => {
   const { name } = useChakraFieldProps(props)
   const [field] = useField(name)
 
-  return <Textarea {...field} {...props} />
+  return <Textarea {...props} {...field} />
 }

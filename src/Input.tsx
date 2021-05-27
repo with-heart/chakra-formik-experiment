@@ -11,5 +11,5 @@ export const InputFormik = (props: InputFormikProps) => {
   const { name } = useChakraFieldProps(props)
   const [field] = useField(name)
 
-  return <Input {...field} {...props} />
+  return <Input {...props} {...field} />
 }

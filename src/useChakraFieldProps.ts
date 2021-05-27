@@ -14,7 +14,7 @@ import { ChakraFieldProps } from "./types"
  *   // value from that context
  *   const {name} = useChakraFieldProps(props)
  *   const [field] = useField(name)
- *   return <SomeChakraComponent {...field} {...props} />
+ *   return <SomeChakraComponent {...props} {...field} />
  * }
  */
 export const useChakraFieldProps = <Props extends ChakraFieldProps<unknown>>(

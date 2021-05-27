@@ -15,5 +15,5 @@ export const RadioFormik = (props: RadioFormikProps) => {
     value: props.value,
   })
 
-  return <Radio isChecked={checked} {...field} {...props} />
+  return <Radio isChecked={checked} {...props} {...field} />
 }

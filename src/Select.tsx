@@ -11,5 +11,5 @@ export const SelectFormik = (props: SelectFormikProps) => {
   const { name } = useChakraFieldProps(props)
   const [field] = useField(name)
 
-  return <Select {...field} {...props} />
+  return <Select {...props} {...field} />
 }

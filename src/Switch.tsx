@@ -11,5 +11,5 @@ export const SwitchFormik = (props: SwitchFormikProps) => {
   const { name } = useChakraFieldProps(props)
   const [{ checked, ...field }] = useField({ name, type: "checkbox" })
 
-  return <Switch isChecked={checked} {...field} {...props} />
+  return <Switch isChecked={checked} {...props} {...field} />
 }
