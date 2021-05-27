@@ -104,6 +104,30 @@ const RadioFormikExample = () => (
 )
 ```
 
+### `RadioGroupFormik`
+
+The `RadioGroupFormik` component is Chakra's `RadioGroup` component except it's
+automatically connected to Formik via the `name` prop.
+
+**Note**: Use the regular Chakra `Radio` component within `RadioGroupFormik`. We
+could eventually make `RadioFormik` work with it.
+
+```tsx
+import * as React from "react"
+import { Formik } from "formik"
+import { Radio } from "@chakra-ui/react"
+import { RadioGroupFormik } from "chakra-formik-experiment"
+
+const RadioGroupFormikExample = () => (
+  <Formik initialValues={{ radio: "A" }} onSubmit={console.log}>
+    <RadioGroupFormik name="radio">
+      <Radio value="A">A</Radio>
+      <Radio value="B">B</Radio>
+    </RadioGroupFormik>
+  </Formik>
+)
+```
+
 ### `SelectFormik`
 
 The `SelectFormik` component is Chakra's `Select` component except it's
@@ -283,7 +307,7 @@ const TextareaFormikExample = () => (
 - [x] `Input` (`InputFormik`)
 - [x] `NumberInput` (`NumberInputFormik`)
 - [x] `Radio` (`RadioFormik`)
-- [ ] `RadioGroup`
+- [x] `RadioGroup`
 - [x] `Select` (`SelectFormik`)
 - [ ] `Slider`
 - [x] `Switch` (`SwitchFormik`)
