@@ -1,5 +1,5 @@
 import * as React from "react"
-import { createContext } from "@chakra-ui/utils"
+import { createContext } from "@chakra-ui/react-utils"
 import { FormControl, FormControlProps } from "@chakra-ui/react"
 import { useField } from "formik"
 
@@ -11,13 +11,11 @@ export type FieldControlContext = {
   name: string
 }
 
-const [
-  FieldControlProvider,
-  useFieldControlContext,
-] = createContext<FieldControlContext>({
-  strict: false,
-  name: "FieldControlContext",
-})
+const [FieldControlProvider, useFieldControlContext] =
+  createContext<FieldControlContext>({
+    strict: false,
+    name: "FieldControlContext",
+  })
 
 export { useFieldControlContext }
 
