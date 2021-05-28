@@ -80,6 +80,6 @@
       "yarn lint --cache --fix",
       "prettier --write"
     ],
-    "*.{json,md}": "prettier --write"
+    "*.{yml,json,md}": "prettier --write"
   }
 }
