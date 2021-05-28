@@ -1,0 +1,36 @@
+name: "Version or release"
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  change:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@master"
+
+      - name: "Configure environment"
+        uses: "./.github/actions/env"
+
+      - name: "Run checks"
+        uses: "./.github/actions/check"
+
+      - name: "Build"
+        run: "yarn build"
+
+      - name: "Configure git user"
+        run: |
+          git config --global user.email "github@chanchan.io"
+          git config --global user.name "Mark Chandler"
+
+      - name: "Changesets: version or release"
+        uses: "changesets/action@master"
+        with:
+          publish: "yarn release"
+          commit: "ci(release): version packages"
+        env:
+          NPM_TOKEN: "${{ secrets.NPM_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+

@@ -19,6 +19,7 @@
     "build": "preconstruct build",
     "build:clean": "rimraf dist",
     "lint": "eslint ./src --ext .ts,.tsx",
+    "release": "changeset publish",
     "test": "jest",
     "type-check": "tsc --noEmit"
   },
