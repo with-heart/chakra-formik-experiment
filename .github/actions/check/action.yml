@@ -5,9 +5,12 @@ runs:
   steps:
     - name: "Test"
       run: "yarn test"
+      shell: "bash"
 
     - name: "Type check"
       run: "yarn type-check"
+      shell: "bash"
 
     - name: "Lint"
       run: "yarn lint"
+      shell: "bash"
