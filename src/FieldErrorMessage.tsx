@@ -6,10 +6,10 @@ import { useFieldControlContext } from "./FieldControlContext"
 export interface FieldErrorMessageProps extends FormErrorMessageProps {}
 
 export const FieldErrorMessage = (props: FieldErrorMessageProps) => {
-  const { name } = useFieldControlContext()
+  const context = useFieldControlContext()
   return (
     <FormErrorMessage {...props}>
-      <ErrorMessage name={name} />
+      <ErrorMessage name={context?.name ?? ""} />
     </FormErrorMessage>
   )
 }

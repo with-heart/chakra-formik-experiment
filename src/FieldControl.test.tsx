@@ -1,7 +1,8 @@
 import { FormLabel, Input } from "@chakra-ui/react"
 import { Field, Formik } from "formik"
 import * as React from "react"
-import { FieldControl, useFieldControlContext } from "./FieldControl"
+import { FieldControl } from "./FieldControl"
+import { useFieldControlContext } from "./FieldControlContext"
 import { render, screen } from "./test-utils"
 
 const Component = () => {

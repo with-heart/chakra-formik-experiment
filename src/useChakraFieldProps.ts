@@ -21,7 +21,13 @@ export const useChakraFieldProps = <Props extends ChakraFieldProps<unknown>>(
   props: Props,
 ) => {
   const controlContext = useFieldControlContext()
-  return {
-    name: props.name ?? controlContext?.name,
+  const name = props.name ?? controlContext?.name
+
+  if (!name) {
+    throw new Error(
+      "`chakra-formik-experiment` components require a `name`. Provide the `name` prop directly to the component or wrap the component with `FieldControl` and provide a `name` prop to it.",
+    )
   }
+
+  return { name }
 }

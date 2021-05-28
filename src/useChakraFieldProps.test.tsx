@@ -36,3 +36,19 @@ test("prefers the component's name prop if both prop and context exist", () => {
   })
   expect(result.current.name).toEqual("prop")
 })
+
+test("throws an error if `name` prop is missing from component and FieldControl context", () => {
+  const { result } = renderHook(() => useChakraFieldProps({}), {
+    wrapper: function Wrapper({ children }: { children: React.ReactNode }) {
+      return (
+        <FormikWrapper>
+          {/* @ts-expect-error We're testing that the `name` prop is missing. */}
+          <FieldControl>{children}</FieldControl>
+        </FormikWrapper>
+      )
+    },
+  })
+  expect(result.error).not.toBeUndefined()
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  expect(result.error!.message).toMatch(/components require a `name`/)
+})
