@@ -1299,7 +1299,7 @@
   dependencies:
     "@chakra-ui/utils" "^1.7.0"
 
-"@chakra-ui/react@^1.3.3":
+"@chakra-ui/react@^1.6.3":
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-1.6.3.tgz#33b6a81727a506c2724d70d04d3ad9da43cef32f"
   integrity sha512-bYyxtctgIx9aGEm1AUlFI2kcubtOUwCRPLxBoALX0frb7QT7wJ+NlUa0UJyixJrtUpujpKKI6rfJQoWgxArzXQ==
@@ -1505,7 +1505,7 @@
   dependencies:
     "@chakra-ui/utils" "1.8.0"
 
-"@chakra-ui/utils@1.8.0", "@chakra-ui/utils@^1.2.0", "@chakra-ui/utils@^1.7.0":
+"@chakra-ui/utils@1.8.0", "@chakra-ui/utils@^1.7.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-1.8.0.tgz#f7aad8175cc5a26a1d2795dc78691bbc21fd539e"
   integrity sha512-BWIhKcXnLbOIwCTKeNcOStNwk9RyYVA9xRRFPGK6Kp3EhrxP0rDwAbu4D3o3qAc+yhIDhGmPaIj1jRXHB5DTfg==
@@ -1789,7 +1789,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.5.tgz#2c40f81449a4e554e9fc6396910ed4843ec2be50"
   integrity sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==
 
-"@emotion/react@^11.1.5":
+"@emotion/react@^11.4.0":
   version "11.4.0"
   resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.4.0.tgz#2465ad7b073a691409b88dfd96dc17097ddad9b7"
   integrity sha512-4XklWsl9BdtatLoJpSjusXhpKv9YVteYKh9hPKP1Sxl+mswEFoUe0WtmtWjxEjkA51DQ2QRMCNOvKcSlCQ7ivg==
@@ -1818,7 +1818,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.0.1.tgz#245f54abb02dfd82326e28689f34c27aa9b2a698"
   integrity sha512-GbIvVMe4U+Zc+929N1V7nW6YYJtidj31lidSmdYcWozwoBIObXBnaJkKNDjZrLm9Nc0BR+ZyHNaRZxqNZbof5g==
 
-"@emotion/styled@^11.1.5":
+"@emotion/styled@^11.3.0":
   version "11.3.0"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-11.3.0.tgz#d63ee00537dfb6ff612e31b0e915c5cf9925a207"
   integrity sha512-fUoLcN3BfMiLlRhJ8CuPUMEyKkLEoM+n+UyAbnqGEsCd5IzKQ7VQFLtzpJOaCD2/VR2+1hXQTnSZXVJeiTNltA==
@@ -4157,7 +4157,7 @@ form-data@^3.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-formik@^2.2.6:
+formik@^2.2.8:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/formik/-/formik-2.2.8.tgz#986c3cd73849dde7c5154e5f6093a5568e482854"
   integrity sha512-hDjQyTGO0ivptzCRHEyeTvfvgFVSzLeW2ptAgSk5U2jkf8pvSNtXe6oExo1RmrbKF1Bs7dmPv4P5g2JAgYnvlw==
@@ -4177,23 +4177,18 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^3.3.0:
-  version "3.10.6"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.10.6.tgz#67737ef05ed0408860751d81c919770ac831b394"
-  integrity sha512-OxOtKgQS4km9a8dm0IMBtNNp4f0DiHfQ/IzxKs818+Kg9V/Ve/pRUJ2dtWBb6+W4lIPNLgRSpbOwOACVj15XcQ==
+framer-motion@^4.1.17:
+  version "4.1.17"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-4.1.17.tgz#4029469252a62ea599902e5a92b537120cc89721"
+  integrity sha512-thx1wvKzblzbs0XaK2X0G1JuwIdARcoNOW7VVwjO8BUltzXPyONGAElLu6CiCScsOQRI7FIk/45YTFtJw5Yozw==
   dependencies:
-    framesync "5.2.0"
+    framesync "5.3.0"
     hey-listen "^1.0.8"
-    popmotion "9.3.1"
-    style-value-types "4.1.1"
-    tslib "^1.10.0"
+    popmotion "9.3.6"
+    style-value-types "4.1.4"
+    tslib "^2.1.0"
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
-
-framesync@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/framesync/-/framesync-5.2.0.tgz#f14480654cd05a6af4c72c9890cad93556841643"
-  integrity sha512-dcl92w5SHc0o6pRK3//VBVNvu6WkYkiXmHG6ZIXrVzmgh0aDYMDAaoA3p3LH71JIdN5qmhDcfONFA4Lmq22tNA==
 
 framesync@5.3.0:
   version "5.3.0"
@@ -6169,15 +6164,15 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-popmotion@9.3.1:
-  version "9.3.1"
-  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-9.3.1.tgz#134319ed4b9b8e3ec506c99064f7b2f14bc05781"
-  integrity sha512-Qozvg8rz2OGeZwWuIjqlSXqqgWto/+QL24ll8sAAc0n71KY/wvN1W4sAASxTuHv8YWdDnk9u9IdadyPo2DGvDA==
+popmotion@9.3.6:
+  version "9.3.6"
+  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-9.3.6.tgz#b5236fa28f242aff3871b9e23721f093133248d1"
+  integrity sha512-ZTbXiu6zIggXzIliMi8LGxXBF5ST+wkpXGEjeTUDUOCdSQ356hij/xjeUdv0F8zCQNeqB1+PR5/BB+gC+QLAPw==
   dependencies:
-    framesync "5.2.0"
+    framesync "5.3.0"
     hey-listen "^1.0.8"
-    style-value-types "4.1.1"
-    tslib "^1.10.0"
+    style-value-types "4.1.4"
+    tslib "^2.1.0"
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
@@ -6296,7 +6291,7 @@ react-clientside-effect@^1.2.2:
   dependencies:
     "@babel/runtime" "^7.12.13"
 
-react-dom@^17.0.1:
+react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -6372,7 +6367,7 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
-react@^17.0.1:
+react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
@@ -7044,13 +7039,13 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-style-value-types@4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/style-value-types/-/style-value-types-4.1.1.tgz#15d08bd9bb17ac3f5d4a863bf9d5e4eb8e4f0686"
-  integrity sha512-cNLrl6jk+I1T18ZI2KIp/fcqKVuykcNELDrOz7y+TYZR97xmNdN0ewupURvVFnQxVrRJv98TMBq92VMsggq3kw==
+style-value-types@4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/style-value-types/-/style-value-types-4.1.4.tgz#80f37cb4fb024d6394087403dfb275e8bb627e75"
+  integrity sha512-LCJL6tB+vPSUoxgUBt9juXIlNJHtBMy8jkXzUJSBzeHWdBu6lhzHqCvLVkXFGsFIlNa2ln1sQHya/gzaFmB2Lg==
   dependencies:
     hey-listen "^1.0.8"
-    tslib "^1.10.0"
+    tslib "^2.1.0"
 
 stylis@^4.0.3:
   version "4.0.10"
