@@ -10,7 +10,16 @@
   ],
   "main": "dist/chakra-formik-experiment.cjs.js",
   "module": "dist/chakra-formik-experiment.esm.js",
-  "author": "Mark Chandler",
+  "author": "Mark Chandler <github@chanchan.io>",
+  "homepage": "https://github.com/with-heart/chakra-formik-experiment#readme",
+  "repository": "github:with-heart/chakra-formik-experiment",
+  "bugs": {
+    "url": "https://github.com/with-heart/chakra-formik-experiment/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/with-heart"
+  },
   "license": "MIT",
   "files": [
     "dist"
