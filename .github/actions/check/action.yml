@@ -1,6 +1,5 @@
 name: "Run checks"
 
-
 runs:
   using: "composite"
   steps:
