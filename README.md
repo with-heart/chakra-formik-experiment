@@ -14,6 +14,19 @@ and Formik users.
 Check out this CodeSandbox for a demonstration of the components in action:
 https://codesandbox.io/s/interesting-blackburn-oldox?file=/src/App.tsx
 
+## Installation
+
+Install [Chakra UI](https://chakra-ui.com/docs/getting-started) and
+[Formik](https://formik.org/docs/overview#npm), then:
+
+```sh
+# with yarn
+yarn add chakra-formik-experiment
+
+# with npm
+npm install chakra-formik-experiment
+```
+
 ## Usage
 
 ### As individual fields
