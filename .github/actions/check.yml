@@ -1,0 +1,14 @@
+name: "Run checks"
+
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Test"
+      run: "yarn test"
+
+    - name: "Type check"
+      run: "yarn type-check"
+
+    - name: "Lint"
+      run: "yarn lint"
