@@ -299,7 +299,7 @@ import { SwitchFormik } from "chakra-formik-experiment"
 
 const SwitchFormikExample = () => (
   <Formik initialValues={{ switch: true }} onSubmit={console.log}>
-    <SwitchFormik />
+    <SwitchFormik name="switch" />
   </Formik>
 )
 ```
