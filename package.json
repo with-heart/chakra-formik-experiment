@@ -8,23 +8,23 @@
     "formik",
     "forms"
   ],
-  "main": "index.js",
+  "main": "dist/chakra-formik-experiment.cjs.js",
+  "module": "dist/chakra-formik-experiment.esm.js",
   "author": "Mark Chandler",
   "license": "MIT",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:clean && npm run build:types && npm run build:js",
+    "build": "preconstruct build",
     "build:clean": "rimraf dist",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src/ --out-dir dist --extensions \".ts,.tsx\" --ignore '**/*.test.ts' --ignore '**/*.test.tsx' --source-maps inline",
     "lint": "eslint ./src --ext .ts,.tsx",
     "test": "jest",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.3.3",
+    "@chakra-ui/react-utils": "^1.1.2",
     "@chakra-ui/utils": "^1.2.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
@@ -39,6 +39,7 @@
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.12.16",
+    "@preconstruct/cli": "^2.1.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/react-hooks": "^5.0.3",
