@@ -1,6 +1,6 @@
 {
   "name": "chakra-formik-experiment",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An experiment for tight-knit Chakra+Formik integration with a familiar API",
   "keywords": [
     "chakra",
