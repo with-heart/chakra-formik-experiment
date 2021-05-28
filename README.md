@@ -2,12 +2,15 @@
 
 ## What is this?
 
-This project is a prototype for a Chakra UI+Formik integration library. The goal
-of this project is to experiment with and establish patterns that can eventually
-be turned into an official Chakra UI extension library.
+This project is a prototype for a Chakra UI+Formik integration library.
 
-The goal of this library is to provide an API that is familiar to both Chakra UI
-and Formik users.
+The goals of this project:
+
+- provide an API that is familiar to both Chakra UI and Formik users
+- experiment with and establish patterns that can eventually be turned into an
+  official Chakra UI extension library
+
+**As this is a pre-`1.0` experiment, the API is subject to change.**
 
 ## Demo
 
