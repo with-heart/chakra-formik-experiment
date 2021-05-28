@@ -3,7 +3,7 @@ import { ErrorMessage } from "formik"
 import * as React from "react"
 import { useFieldControlContext } from "./FieldControlContext"
 
-export type FieldErrorMessageProps = FormErrorMessageProps
+export interface FieldErrorMessageProps extends FormErrorMessageProps {}
 
 export const FieldErrorMessage = (props: FieldErrorMessageProps) => {
   const { name } = useFieldControlContext()

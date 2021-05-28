@@ -4,7 +4,7 @@ import { useField } from "formik"
 import { ChakraFieldProps } from "./types"
 import { useChakraFieldProps } from "./useChakraFieldProps"
 
-export type TextareaFormikProps = ChakraFieldProps<TextareaProps>
+export interface TextareaFormikProps extends ChakraFieldProps<TextareaProps> {}
 
 /**
  * `TextareaFormik` connects Chakra's `Textarea` component as a Formik field.

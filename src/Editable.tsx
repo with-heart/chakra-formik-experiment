@@ -4,7 +4,7 @@ import { useField } from "formik"
 import { ChakraFieldProps } from "./types"
 import { useChakraFieldProps } from "./useChakraFieldProps"
 
-export type EditableFormikProps = ChakraFieldProps<EditableProps>
+export interface EditableFormikProps extends ChakraFieldProps<EditableProps> {}
 
 /**
  * `EditableFormik` connects Chakra's `Editable` component as a Formik field.

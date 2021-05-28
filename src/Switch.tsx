@@ -4,7 +4,7 @@ import { useField } from "formik"
 import { ChakraFieldProps } from "./types"
 import { useChakraFieldProps } from "./useChakraFieldProps"
 
-export type SwitchFormikProps = ChakraFieldProps<SwitchProps>
+export interface SwitchFormikProps extends ChakraFieldProps<SwitchProps> {}
 
 /** `SwitchFormik` connects Chakra's `Switch` component as a Formik field. */
 export const SwitchFormik = (props: SwitchFormikProps) => {

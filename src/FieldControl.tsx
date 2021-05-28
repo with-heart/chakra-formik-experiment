@@ -6,8 +6,9 @@ import {
   FieldControlProvider,
 } from "./FieldControlContext"
 
-export type FieldControlProps = Omit<FormControlProps, "name"> &
-  FieldControlContext
+export interface FieldControlProps
+  extends Omit<FormControlProps, "name">,
+    FieldControlContext {}
 
 /**
  * `FieldControl` provides context for the `name` value for field form

@@ -4,9 +4,8 @@ import { useField } from "formik"
 import { ChakraFieldProps } from "./types"
 import { useChakraFieldProps } from "./useChakraFieldProps"
 
-export type CheckboxGroupFormikProps = ChakraFieldProps<
-  Omit<CheckboxGroupProps, "value">
-> & {
+export interface CheckboxGroupFormikProps
+  extends ChakraFieldProps<Omit<CheckboxGroupProps, "value">> {
   value?: string | string[]
 }
 

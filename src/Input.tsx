@@ -4,7 +4,7 @@ import { useField } from "formik"
 import { ChakraFieldProps } from "./types"
 import { useChakraFieldProps } from "./useChakraFieldProps"
 
-export type InputFormikProps = ChakraFieldProps<InputProps>
+export interface InputFormikProps extends ChakraFieldProps<InputProps> {}
 
 /** `InputFormik` connects Chakra's `Input` component as a Formik field. */
 export const InputFormik = (props: InputFormikProps) => {

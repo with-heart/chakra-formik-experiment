@@ -4,7 +4,8 @@ import { useField } from "formik"
 import { ChakraFieldProps } from "./types"
 import { useChakraFieldProps } from "./useChakraFieldProps"
 
-export type RadioGroupFormikProps = ChakraFieldProps<RadioGroupProps>
+export interface RadioGroupFormikProps
+  extends ChakraFieldProps<RadioGroupProps> {}
 
 /** `RadioGroupFormik` connects Chakra's `RadioGroup` component as a Formik field. */
 export const RadioGroupFormik = (props: RadioGroupFormikProps) => {
