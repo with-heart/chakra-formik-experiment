@@ -9,6 +9,11 @@ be turned into an official Chakra UI extension library.
 The goal of this library is to provide an API that is familiar to both Chakra UI
 and Formik users.
 
+## Demo
+
+Check out this CodeSandbox for a demonstration of the components in action:
+https://codesandbox.io/s/interesting-blackburn-oldox?file=/src/App.tsx
+
 ## Usage
 
 ### As individual fields
