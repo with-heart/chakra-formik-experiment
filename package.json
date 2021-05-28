@@ -21,7 +21,8 @@
     "lint": "eslint ./src --ext .ts,.tsx",
     "release": "changeset publish",
     "test": "jest",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "peerDependencies": {
     "@chakra-ui/react": "^1.6.3",
@@ -59,7 +60,10 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "formik": "^2.2.8",
     "framer-motion": "^4.1.17",
+    "husky": ">=6",
     "jest": "^26.6.3",
+    "lint-staged": ">=10",
+    "prettier": "^2.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
@@ -70,5 +74,12 @@
     "setupFilesAfterEnv": [
       "<rootDir>/jest-setup.ts"
     ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn lint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": "prettier --write"
   }
 }
