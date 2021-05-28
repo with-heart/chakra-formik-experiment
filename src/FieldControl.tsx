@@ -1,23 +1,13 @@
 import * as React from "react"
-import { createContext } from "@chakra-ui/react-utils"
 import { FormControl, FormControlProps } from "@chakra-ui/react"
 import { useField } from "formik"
+import {
+  FieldControlContext,
+  FieldControlProvider,
+} from "./FieldControlContext"
 
 export type FieldControlProps = Omit<FormControlProps, "name"> &
   FieldControlContext
-
-export type FieldControlContext = {
-  /** The name of the `Field`. Used to connect the form element to Formik. */
-  name: string
-}
-
-const [FieldControlProvider, useFieldControlContext] =
-  createContext<FieldControlContext>({
-    strict: false,
-    name: "FieldControlContext",
-  })
-
-export { useFieldControlContext }
 
 /**
  * `FieldControl` provides context for the `name` value for field form

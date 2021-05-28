@@ -24,7 +24,6 @@
   },
   "peerDependencies": {
     "@chakra-ui/react": "^1.6.3",
-    "@chakra-ui/react-utils": "^1.1.2",
     "formik": "^2.2.8",
     "react": "^17.0.2"
   },
@@ -35,7 +34,6 @@
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.12.16",
     "@chakra-ui/react": "^1.6.3",
-    "@chakra-ui/react-utils": "^1.1.2",
     "@changesets/changelog-github": "^0.4.0",
     "@changesets/cli": "^2.16.0",
     "@emotion/react": "^11.4.0",

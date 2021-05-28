@@ -1,4 +1,4 @@
-import { useFieldControlContext } from "./FieldControl"
+import { useFieldControlContext } from "./FieldControlContext"
 import { ChakraFieldProps } from "./types"
 
 /**

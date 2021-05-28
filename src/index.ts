@@ -1,4 +1,5 @@
 export * from "./FieldControl"
+export * from "./FieldControlContext"
 export * from "./FieldErrorMessage"
 export * from "./Checkbox"
 export * from "./CheckboxGroup"
