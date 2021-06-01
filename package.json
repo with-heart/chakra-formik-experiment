@@ -34,8 +34,8 @@
     "prepare": "husky install"
   },
   "peerDependencies": {
-    "@chakra-ui/react": "^1.6.3",
-    "formik": "^2.2.8",
+    "@chakra-ui/react": "^1.0.0",
+    "formik": "^2.0.0",
     "react": "16.x || 17.x"
   },
   "devDependencies": {
