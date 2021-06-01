@@ -32,6 +32,12 @@ npm install chakra-formik-experiment
 
 ## Usage
 
+`chakra-formik-experiment` works by connecting Chakra form components to a
+Formik form's context using the `name` prop.
+
+The `name` prop can be passed directly to the library's form components or
+provided to them by the `FieldControl` component.
+
 ### As individual fields
 
 ```tsx
