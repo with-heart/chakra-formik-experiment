@@ -62,14 +62,18 @@ with Formik via the `name` prop.
 import * as React from "react"
 import { Formik } from "formik"
 import { FormLabel } from "@chakra-ui/react"
-import { FieldControl, FieldErrorMessage, InputFormik } from "chakra-formik-experiment"
+import {
+  FieldControl,
+  FieldErrorMessage,
+  InputFormik,
+} from "chakra-formik-experiment"
 
 const Example = () => (
-  <FieldErrorMessage id="name" name="name">
+  <FieldControl id="name" name="name">
     <FormLabel>Name</FormLabel>
     <InputFormik />
     <FieldErrorMessage />
-  </FormControl>
+  </FieldControl>
 )
 ```
 
